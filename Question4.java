@@ -1,23 +1,24 @@
-package Assignment2;
+package Assignment4;
+
 import java.util.Scanner;
+
 public class Question4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
+		int x;
 		
-		int minx;
-		int miny;
-		int kix;
-		int kiy;
+		x=input.nextInt();
 		
-		minx= input.nextInt();
-		miny= input.nextInt();
-		kix= input.nextInt();
-		kiy= input.nextInt();
+		int i =1;
+		int sum=0;
 		
-		System.out.println(minx > kix && miny > kiy);
-		
+		for (i=1;i<=x;i++) {
+			sum=sum+i;
+		}
+		System.out.println(sum);
 	}
-	
+
 }
+//Question1과 동일한 질문이라 for문으로 작성했습니다.

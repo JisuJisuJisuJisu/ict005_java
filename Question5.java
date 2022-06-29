@@ -1,22 +1,25 @@
-package Assignment1;
+package Assignment4;
 import java.util.Scanner;
 public class Question5 {
-//소수 둘째자리 반올림하여 첫째자리까지 출력하기
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
+		Scanner in=new Scanner(System.in);
 		
-		double yard;
+		int number=0;
+		int result=0;
 		
+	
 		
-		System.out.print("yard? ");
-		yard = input.nextDouble();
+		while(true) {
+			int i=in.nextInt();
+			if(i==0)
+				break;
+			if(i%3!=0&&i%5!=0)
+				number++;
+		} 
 		
-		double cm = yard *91.44;
-		
-		//System.out.println(Math.round(cm*10)/10.0);
-		System.out.println(yard+"yard = "+ Math.round(cm*10)/10.0);
-		
+		System.out.print(number);
 		
 	}
 
