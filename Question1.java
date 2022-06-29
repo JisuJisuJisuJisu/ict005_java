@@ -1,22 +1,21 @@
-package Assignment1;
-
+package Assignment2;
+import java.util.Scanner;
 public class Question1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int kor= 90;
-		int mat= 80;
-		int eng= 100;
+		Scanner input = new Scanner(System.in);
 		
-		int sum = kor+mat+eng;
-		int avg = sum/3;
+		int x;
+		int y;
 		
-		System.out.println("kor 90");
-		System.out.println("mat 80");
-		System.out.println("eng 100");
-		System.out.println("sum "+sum);
-		System.out.println("avg "+avg);
+		x= input.nextInt();
+		y= input.nextInt();
 		
+		System.out.println(x+" > "+y+" --- "+(x > y));
+		System.out.println(x+" < "+y+" --- "+(x < y));
+		System.out.println(x+" >= "+y+" --- "+(x >= y));
+		System.out.println(x+" <= "+y+" --- "+(x <= y));
 	}
 
 }
