@@ -1,21 +1,22 @@
-package Assignment4;
+package Assignment3;
 import java.util.Scanner;
 public class Question1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
+		
 		int x;
 		
-		x=input.nextInt();
-		
-		int i =1;
-		int sum=0;
-		while(i<=x) {
-			sum=sum+i;
-			i++;
+		x= input.nextInt();
+
+		if (x == 0) {
+			System.out.println("zero");
+		} else if (x<0) {
+			System.out.println("minus");
+		} else {
+			System.out.println("plus");
 		}
-		System.out.println(sum);
 	}
 
 }

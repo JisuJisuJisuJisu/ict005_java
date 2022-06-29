@@ -1,26 +1,27 @@
-package Assignment4;
+package Assignment3;
 import java.util.Scanner;
 public class Question5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in=new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
-		int number=0;
-		int result=0;
-		
+		String gender;
+		int age;
 	
 		
-		while(true) {
-			int i=in.nextInt();
-			if(i==0)
-				break;
-			if(i%3!=0&&i%5!=0)
-				number++;
+		gender = input.next();
+		age = input.nextInt();
+		
+		if (gender.equals("F") && age>=18) {
+			System.out.println("WOMAN");
+		} else if(gender.equals("F") && age<18) {
+			System.out.println("GIRL");
+		} else if (gender.equals("M") && age>=18) {
+			System.out.println("MAN");
+		} else if (gender.equals("M") && age<18) {
+			System.out.println("BOY");
 		} 
-		
-		System.out.print(number);
-		
-	}
 
+	}
 }
