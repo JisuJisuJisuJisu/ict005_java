@@ -1,38 +1,29 @@
-package Assignment3;
+package Assignment5;
 import java.util.Scanner;
 public class Question2 {
-
+//미완성
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String alphabet;
+		Scanner in= new Scanner(System.in);
 		
-		Scanner input = new Scanner(System.in);
-		alphabet = input.next();
-		
-		String grade;
-
-		switch (alphabet) {
-		case "A" :
-			grade= "excellent";
-			break;
-		case "B" :
-			grade = "Good";
-			break;
-		case "C" :
-			grade = "Usually";
-			break;
-		case "D" :
-			grade = "Effort";
-			break;
-		case "F" :
-			grade = "Failure";
-			break;
-		default:
-			grade = "error";
-			break;
+		int x=in.nextInt();
+		int y=in.nextInt();
+		if(x>y) {
+			for(int col=1;col<10;col++) {
+				for(int row=x;row>=y;row--) {
+					System.out.print(row+" * "+col+" = "+row*col+"   ");
+				}
+				System.out.println();
+			}
 		}
-		System.out.print(grade);
-
+		else {
+			for(int col=1;col<10;col++) {
+				for(int row=x;row<=y;row++) {
+					System.out.print(row+" * "+col+" = "+row*col+"   ");
+				}
+				System.out.println();
+			}
+		}
 	}
 
 }

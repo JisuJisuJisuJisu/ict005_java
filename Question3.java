@@ -1,31 +1,20 @@
-package Assignment3;
+package Assignment5;
 import java.util.Scanner;
 public class Question3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		System.out.print("Number? ");
-		int animal = in.nextInt();
-		String number;
+		Scanner sc=new Scanner(System.in);
 		
-		switch (animal) {
-		case 1 :
-			number= "dog";
-			break;
-		case 2 :
-			number = "cat";
-			break;
-		case 3 :
-			number = "chick";
-			break;
-		default:
-			number = "I don't know.";
-			break;
+		int row=sc.nextInt();
+		int col=sc.nextInt();
+		
+		for(int i=1;i<=row;i++) {
+			for(int j=1;j<=col;j++) {
+			System.out.print(i*j+" ");
 		}
-		System.out.print(number);
-
-
+			System.out.println();
 	}
 
+}
 }
