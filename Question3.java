@@ -1,20 +1,18 @@
-package Assignment5;
+package Assignment6;
 import java.util.Scanner;
 public class Question3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
+		Scanner in= new Scanner(System.in);
 		
-		int row=sc.nextInt();
-		int col=sc.nextInt();
+		double[]arr= {85.6, 79.5, 83.1, 80.0, 78.2, 75.0};
+		int x =in.nextInt();
+		int y =in.nextInt();
 		
-		for(int i=1;i<=row;i++) {
-			for(int j=1;j<=col;j++) {
-			System.out.print(i*j+" ");
-		}
-			System.out.println();
+		double sum=arr[x-1]+arr[y-1];
+		System.out.print(Math.round(sum*100)/100.0);
+			
 	}
 
-}
 }
