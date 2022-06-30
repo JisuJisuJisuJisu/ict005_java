@@ -1,42 +1,26 @@
-package Assignment6;
+package Midtest;
+
 import java.util.Scanner;
+
 public class Question10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		Scanner in = new Scanner(System.in);
-		
-		int[][] arr = new int[4][2];
-		int result = 0;
+		Scanner in =new Scanner(System.in);
 
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = in.nextInt();
-			}
-
-		}
-		for (int i = 0; i < arr.length; i++) {
+		int[] number = new int[15];
+		int row;
+		int col;
+		
+		String input = in.nextLine();
+		
+		for(row=0;row<9;row++) {
 			
-			int sum = 0;
-
-			for (int j = 0; j < arr[i].length; j++) {
-				sum += arr[i][j];
+			for(col=0;col<2;col++) {
+				System.out.println("");
 			}
-			result += sum;
-			System.out.print((sum / 2) + " ");
+			System.out.println(row+"~"+(row+10)+" : "+col);
 		}
-		System.out.println();
-
-		for (int i = 0; i < 2; i++) {
-			int sum = 0;
-			for (int j = 0; j < 4; j++) {
-				sum += arr[j][i];
-			}
-			System.out.print((sum / 4) + " ");
-		}
-		System.out.println();
-		System.out.println(result / 8);
 	}
 
 }

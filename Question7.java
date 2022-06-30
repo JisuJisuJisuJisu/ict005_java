@@ -1,23 +1,20 @@
-package Assignment5;
+package Midtest;
 import java.util.Scanner;
 public class Question7 {
-
+//소수판별하기
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
+		Scanner in= new Scanner(System.in);
 		
-		int x=in.nextInt();
+		int x;
+		x=in.nextInt();
+		int i;
 		
-		for(int row=0;row<x;row++) {
-			int y=1;
-			for (int col=0;col<x-1-row;col++) {
-				System.out.print(" ");
-			}
-			for (int col=0;col<row+1;col++) {
-				System.out.print(y++ +"");
-			}
-			System.out.println();
-		}
+	if(x>=2 && x/x<=1) {
+		System.out.println("Not a prime number.");
+	}else {
+		System.out.println("Prime number.");
+	}
 	}
 
 }

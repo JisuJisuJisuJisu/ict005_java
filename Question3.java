@@ -1,18 +1,30 @@
-package Assignment6;
+package Midtest;
 import java.util.Scanner;
 public class Question3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in= new Scanner(System.in);
+		String fruit;
+		String fruit2;
+		String combo;
+		int x;
+		int y;
 		
-		double[]arr= {85.6, 79.5, 83.1, 80.0, 78.2, 75.0};
-		int x =in.nextInt();
-		int y =in.nextInt();
+		Scanner in=new Scanner(System.in);
+		fruit=in.next();
+		fruit2=in.next();
+		x=in.nextInt();
+		combo=fruit+fruit2;
+		y=combo.length();
 		
-		double sum=arr[x-1]+arr[y-1];
-		System.out.print(Math.round(sum*100)/100.0);
-			
+		System.out.println(combo);
+		String name=combo;
+//		for(int i =0;i<combo.length();i++) {
+//		
+//			//System.out.print(combo[x]+"");
+//		//System.out.print(combo+""+name.charAt(0));
+//	
+//		
+		
 	}
-
-}
+	}

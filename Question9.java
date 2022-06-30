@@ -1,25 +1,24 @@
-package Assignment6;
+package Midtest;
 import java.util.Scanner;
 public class Question9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
-		int[][] student=new int[4][3];
-		for(int i=0;i<student.length;i++) {
-			System.out.print((i+1)+"class? ");
-			for(int j= 0; j<student[i].length;j++) {
-				student[i][j]=in.nextInt();
-			}
-		}
-		for (int i = 0; i < student.length; i++) {
-			int sum = 0;
-			System.out.print((i + 1) + "class : ");
-			for (int j = 0; j < student[i].length; j++) {
-				sum += student[i][j];
-			}
-			System.out.println(sum);
-		}
+		
+		System.out.println("Array1: ");
+		System.out.println("Array2: ");
+		
+		int[] number = new int[7];
+		int[] number2 = new int[7];
+		
+		String input = in.nextLine();
+		String input2 = in.nextLine();
+		
+		
+
+		System.out.print(input);
+		
 	}
 
 }

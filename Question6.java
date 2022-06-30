@@ -1,22 +1,17 @@
-package Assignment6;
+package Midtest;
 import java.util.Scanner;
 public class Question6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-
-		int[] arr = new int[10];
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = in.nextInt();
-		}
-
-		int min = arr[0];
-		for (int i = 1; i < arr.length; i++) {
-			if (min > arr[i])
-				min = arr[i];
-		}
-		System.out.println(min);
+		Scanner in=new Scanner(System.in);
+		String line;
+		
+		System.out.print("Type the line: ");
+		line= in.next();
+		
+		System.out.println("The number of alphabet: "+line.length());
+		System.out.println("The number of alphabet: "+line.charAt(1));
 	}
 
 }
